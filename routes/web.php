@@ -11,6 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+/*
+ * SitesController
+*/
+Route::get('/', 'SitesController@welcome');
