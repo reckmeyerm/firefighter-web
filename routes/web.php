@@ -11,6 +11,20 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+/*
+ * SitesController
+*/
+Route::get('/', 'SitesController@welcome')->name('home');
+
+/*
+ * SessionsController
+*/
+Route::get('/login', 'SessionsController@create')->name('login');
+Route::post('/login', 'SessionsController@store');
+Route::get('/logout', 'SessionsController@destroy');
+
+/*
+ * TestController
+*/
+Route::get('/test/{test}', 'TestsController@run');
