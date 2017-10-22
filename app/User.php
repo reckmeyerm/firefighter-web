@@ -15,7 +15,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password',
+        'username', 'firstname', 'lastname', 'email', 'password', 'active'
     ];
 
     /**
@@ -26,4 +26,19 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function completeName()
+    {
+        if (
+            isset($this->firstname) && !empty($this->firstname)
+            && isset($this->lastname) && !empty($this->lastname)
+        )
+        {
+            return $this->firstname . ' ' . $this->lastname;
+        }
+        else
+        {
+            return $this->username;
+        }
+    }
 }
