@@ -16,6 +16,7 @@
  * SitesController
 */
 Route::get('/', 'SitesController@welcome')->name('home');
+Route::get('/dashboard', 'SitesController@dashboard')->name('dashboard');
 
 /*
  * SessionsController

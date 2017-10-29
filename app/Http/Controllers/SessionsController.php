@@ -19,15 +19,14 @@ class SessionsController extends Controller
     public function store()
     {
         $result = auth()->attempt([
-            'username' => request('username'),
-            'password' => request('password'),
-            'active'   => true
+            'username'  => request('username'),
+            'password'  => request('password'),
+            'active'    => true
         ]);
 
         if ($result)
         {
-            // @TODO
-            return redirect()->home();
+            return redirect()->route('dashboard');
         }
         else
         {
