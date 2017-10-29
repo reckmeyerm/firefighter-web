@@ -1,0 +1,34 @@
+div.dashboard
+{
+    user-select: none;
+    margin-bottom: 30px;
+}
+
+div.dashboard div.card
+{
+    color: #ffffff;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+div.dashboard > div > a,
+div.dashboard > div > a:active
+{
+    color: #000000;
+}
+
+div.dashboard > div > a,
+div.dashboard > div > a:active,
+div.dashboard > div > a:hover
+{
+    text-decoration: none;
+}
+
+div.dashboard > div
+{
+    text-align: center;
+}
+
+div.dashboard i
+{
+    font-size: 6em;
+}

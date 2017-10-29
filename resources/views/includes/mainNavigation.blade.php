@@ -23,6 +23,7 @@
                         {{ Auth::user()->completeName() }}
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="/dashboard">Dashboard</a>
                         <a class="dropdown-item" href="/logout">Logout</a>
                     </div>
                 </li>
