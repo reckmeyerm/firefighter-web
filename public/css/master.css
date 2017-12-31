@@ -1,3 +1,8 @@
+textarea.noresize
+{
+    resize: none;
+}
+
 div.dashboard
 {
     user-select: none;
@@ -31,4 +36,9 @@ div.dashboard > div
 div.dashboard i
 {
     font-size: 6em;
+}
+
+table.settings td.settingKey
+{
+    font-weight: bold;
 }

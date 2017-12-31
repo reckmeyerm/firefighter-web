@@ -65,7 +65,7 @@
             </a>
         </div>
         <div class="col-md-3">
-            <a href="#">
+            <a href="/settings">
                 <div class="card">
                     <div class="card-block">
                         <h3 class="card-title">Settings</h3>

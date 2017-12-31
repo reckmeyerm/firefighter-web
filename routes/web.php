@@ -29,3 +29,8 @@ Route::get('/logout', 'SessionsController@destroy');
  * TestController
 */
 Route::get('/test/{test}', 'TestsController@run');
+
+/*
+ * SettingsController
+*/
+Route::get('/settings', 'SettingsController@index');
