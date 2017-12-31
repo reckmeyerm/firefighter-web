@@ -11,6 +11,9 @@
 |
 */
 
+Illuminate\Pagination\AbstractPaginator::defaultView('pagination::bootstrap-4');
+Illuminate\Pagination\AbstractPaginator::defaultSimpleView('pagination::bootstrap-4');
+
 $app = new Illuminate\Foundation\Application(
     realpath(__DIR__.'/../')
 );

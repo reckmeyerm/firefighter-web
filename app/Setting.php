@@ -6,6 +6,10 @@ use Illuminate\Database\Eloquent\Model;
 
 class Setting extends Model
 {
+    public $fillable = [
+        'value'
+    ];
+
     public static function getValueByKey($key)
     {
        $setting = Setting::where('key', $key)->get();

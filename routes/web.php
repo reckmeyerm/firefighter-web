@@ -34,3 +34,5 @@ Route::get('/test/{test}', 'TestsController@run');
  * SettingsController
 */
 Route::get('/settings', 'SettingsController@index');
+Route::get('/settings/{setting}', 'SettingsController@show');
+Route::put('/settings/{setting}', 'SettingsController@update');

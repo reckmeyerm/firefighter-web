@@ -19,4 +19,24 @@ class SettingsController extends Controller
 
         return view('settings.index', compact('settings'));
     }
+
+    public function show(Setting $setting)
+    {
+        return view('settings.show', compact('setting'));
+    }
+
+    public function update($id, Request $request)
+    {
+        $setting = Setting::findOrFail($id);
+
+        $this->validate($request, [
+            'value'  => 'required'
+        ]);
+
+        $input = $request->all();
+
+        $setting->fill($input)->save();
+
+        return redirect('/settings');
+    }
 }

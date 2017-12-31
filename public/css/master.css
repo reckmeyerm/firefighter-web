@@ -3,6 +3,31 @@ textarea.noresize
     resize: none;
 }
 
+button
+{
+    cursor: pointer;
+}
+
+button.btn-default
+{
+    border-color: #707070;
+}
+
+button.btn-danger, a.btn-danger
+{
+    color: white !important;
+}
+
+button.btn-danger, a.btn-danger
+{
+    color: white !important;
+}
+
+a.nohover:hover
+{
+    text-decoration: none;
+}
+
 div.dashboard
 {
     user-select: none;
@@ -12,7 +37,7 @@ div.dashboard
 div.dashboard div.card
 {
     color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 div.dashboard > div > a,
@@ -35,10 +60,15 @@ div.dashboard > div
 
 div.dashboard i
 {
-    font-size: 6em;
+    font-size: 4.5em;
 }
 
 table.settings td.settingKey
 {
     font-weight: bold;
+}
+
+div.pagination 
+{
+    justify-content: center;
 }
