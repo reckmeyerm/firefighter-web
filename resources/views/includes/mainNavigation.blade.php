@@ -6,15 +6,11 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-                <a class="nav-link" href="/">example/nav-item-1</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/">example/nav-item-2</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/">example/nav-item-3</a>
-            </li>
+            @foreach (App\Category::navigation() as $navigationElement)
+                <li class="nav-item">
+                    <a class="nav-link" href="/categories/{{ $navigationElement->slug }}">{{ $navigationElement->name }}</a>
+                </li>
+            @endforeach
         </ul>
         <ul class="navbar-nav">
             @if (Auth::check())

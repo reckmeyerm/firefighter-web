@@ -3,6 +3,26 @@
 @section ('content')
     <div class="row dashboard">
         <div class="col-md-3">
+            <a href="/categories">
+                <div class="card">
+                    <div class="card-block">
+                        <h3 class="card-title">Categories</h3>
+                        <i class="card-text fa fa-folder-open-o"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3">
+            <a href="/articles">
+                <div class="card">
+                    <div class="card-block">
+                        <h3 class="card-title">Articles</h3>
+                        <i class="card-text fa fa-files-o"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-3">
             <a href="#">
                 <div class="card">
                     <div class="card-block">
@@ -22,6 +42,8 @@
                 </div>
             </a>
         </div>
+    </div>
+    <div class="row dashboard">
         <div class="col-md-3">
             <a href="#">
                 <div class="card">
@@ -32,18 +54,6 @@
                 </div>
             </a>
         </div>
-        <div class="col-md-3">
-            <a href="#">
-                <div class="card">
-                    <div class="card-block">
-                        <h3 class="card-title">Sites</h3>
-                        <i class="card-text fa fa-files-o"></i>
-                    </div>
-                </div>
-            </a>
-        </div>
-    </div>
-    <div class="row dashboard">
         <div class="col-md-3">
             <a href="#">
                 <div class="card">

@@ -19,6 +19,12 @@ Route::get('/', 'SitesController@welcome')->name('home');
 Route::get('/dashboard', 'SitesController@dashboard')->name('dashboard');
 
 /*
+ * Category Controller
+*/
+Route::get('/categories', 'CategoriesController@index');
+Route::get('/categories/{category}', 'CategoriesController@render');
+
+/*
  * SessionsController
 */
 Route::get('/login', 'SessionsController@create')->name('login');
